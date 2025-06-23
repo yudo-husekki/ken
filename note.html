@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>noteカフェに行ってみた | カフェレビュー</title>
+	<meta name="description" content="noteカフェの雰囲気・メニュー・居心地をレビュー。営業時間や支払い方法などの店舗情報も掲載。">
+	<style>
+		body {
+			font-family: 'Helvetica Neue', sans-serif;
+			background-color: #1e1e1e;
+			color: #e5e5e5;
+			max-width: 900px;
+			margin: auto;
+			padding: 40px;
+			line-height: 1.8;
+		}
+
+		h1 {
+			font-size: 28px;
+			color: #ffffff;
+			border-bottom: solid 2px #444;
+			padding-bottom: 10px;
+		}
+
+		h2 {
+			font-size: 20px;
+			margin-top: 40px;
+			color: #cccccc;
+		}
+
+		.gallery {
+			display: flex;
+			gap: 15px;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+
+		.gallery img {
+			width: 100%;
+			max-width: 250px;
+			border-radius: 8px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+		}
+
+		.access {
+			background: #2a2a2a;
+			padding: 15px;
+			border-left: solid 4px #555;
+			border-radius: 8px;
+		}
+
+		.access strong {
+			display: inline-block;
+			width: 120px;
+			color: #f0f0f0;
+		}
+
+		footer {
+			font-size: 0.9em;
+			color: #aaa;
+			margin-top: 50px;
+		}
+
+		a {
+			color: #89c4f4;
+		}
+
+		.clickable {
+			cursor: pointer;
+			color: #cccccc;
+		}
+
+		/* アコーディオンメニュー */
+		#menuBox {
+			background-color: #2b2b2b;
+			padding: 15px;
+			border-radius: 8px;
+			margin-top: 10px;
+			color: #e5e5e5;
+			display: none;
+		}
+
+		.link-center {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.link-btn {
+			display: inline-block;
+			background: gray;
+			color: skyblue;
+			padding: 10px 20px;
+			border-radius: 6px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: background 0.3s;
+		}
+
+		.link-btn:hover {
+			background: gray;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>noteカフェに行ってみた | 雰囲気・写真付きレビュー</h1>
+
+	<p>
+		以前から気になっていた渋谷にある「noteカフェ」に実際に訪問してきました！<br>
+		モノトーンで統一されたおしゃれな空間と静かな作業環境で、SNSでも話題のカフェです。<br>
+		今回は、その雰囲気やメニュー、使い心地を写真付きでレビューします。
+	</p>
+
+	<h2>📖 来店のきっかけ</h2>
+	<p>
+		半年ほど前から知り合いの人におすすめされマーキングしてたのですが、なかなか訪問できる時間が取れずやっとの思いで訪れることができました！
+	</p>
+
+	<h2>📸 写真ギャラリー</h2>
+	<div class="gallery">
+		<img src="images.png" alt="店内雰囲気">
+		<img src="IMG_6058.png" alt="注文メニュー1">
+		<img src="IMG_6068.png" alt="注文メニュー2">
+	</div>
+
+	<h2 class="clickable" onclick="toggleMenu(this)">🍴 注文メニューを見る <span id="arrow">▼</span></h2>
+	<div id="menuBox">
+		<ul>
+			<li>カフェラテ</li>
+			<li>宇治抹茶ラテ</li>
+			<li>オリジナルチョコレートケーキ</li>
+		</ul>
+	</div>
+
+	<h2>🕒 行った時間と混雑状況</h2>
+	<p>
+		訪問日が休日だったこともあり、店舗入り口からの列がすでにありました。<br>
+		平日の訪問回数は一度もないのでわかりませんが、やはり人気店舗なので平日でも30分くらいは並ぶかもしれません。<br>
+	</p>
+	<h2>☕️ 雰囲気と居心地</h2>
+	<p>
+		店内は黒と白を基調としたミニマルなデザインとなっており席数はやや少なめではあるが、落ち着いた静けさが特徴でした。<br>
+		wi-fi完備で一人での作業にもおすすめです。<br>
+		全席禁煙となっているので小さい子供連れでも安心して訪問できます！<br>
+	</p>
+
+	<h2>👥 客層・使い方</h2>
+	<p>
+		家族や友人3〜4人くらいの客層が多かったですが、中には1人での来店をされていた方もちょろちょろ。<br>
+		会話も控えめな空間であったのでPC作業にもおすすめの空間だと思いました！<br>
+		それほど多くの客席はないので、混雑時は長時間の滞在時間は難しと感じました。<br>
+	</p>
+
+	<h2>📍 アクセス・店舗情報</h2>
+	<div class="access">
+		<strong>住所：</strong>東京都渋谷区渋谷2-10-15 B1F<br>
+		<strong>最寄駅：</strong>渋谷駅・表参道駅<br>
+		<strong>営業時間：</strong>10:00〜22:00<br>
+		<strong>支払い方法：</strong>現金・カードのみ<br>
+		<strong>Wi-Fi：</strong>あり<br>
+		<strong>地図リンク：</strong><a href="https://maps.app.goo.gl/9zNH1Q6uAgkaWfBL7?g_st=com.google.maps.preview.copy" target="_blank">Google Mapで見る</a><br>
+		<strong>SNS：</strong><a href="https://www.instagram.com/note.tokyo/" target="_blank">Instagram:@note.tokyo</a>
+	</div>
+
+	<h2>💬 まとめ・感想</h2>
+	<p>
+		白と黒のミニマルデザインの店舗なので一人でゆっくりしたい方にもおすすめだと思いました。<br>
+		SNSでも話題となっている場所なので休日などは特に、一時間前後は並ぶ可能性が高いです。<br>
+		駐車場はありませんでしたが、駅からのアクセスがいいので電車での来店がおすすめです！<br>
+	</p>
+
+	<h2>📩 あなたのおすすめカフェも教えてください！</h2>
+	<p>
+		「ここもおすすめ！」などのカフェがあれば、ぜひ以下のフォームから教えてくだい☕️<br>
+		回答いただいた内容は、今後のレビュー記事やカフェマップ作成の参考にさせていただきます！<br>
+	</p>
+
+	<h2 style="text-align: center;">☕️ おすすめ店舗紹介 ☕️</h2>
+	<div class="link-center">
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrUE-9xeeqSYq-hDhc_1fkusgNRGhXlk-WtviKUwNem7xi6Q/viewform?embedded=true" target="_blank" class="link-btn">📝 Googleフォームでリクエストする</a>
+
+	<footer>
+		＊ 本レビューは実際に訪問した個人の感想です。店舗情報は変更される場合があります。<br>
+		＊ 写真の無断転載・転用はご遠慮ください。
+	</footer>
+
+	<script>
+		function toggleMenu(header) {
+      const box = document.getElementById("menuBox");
+      const arrow = document.getElementById("arrow");
+
+      if (box.style.display === "none") {
+        box.style.display = "block";
+        arrow.textContent = "▲";
+      } else {
+        box.style.display = "none";
+        arrow.textContent = "▼";
+      }
+    }
+	</script>
+</body>
+</html>
